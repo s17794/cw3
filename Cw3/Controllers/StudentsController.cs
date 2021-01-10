@@ -12,9 +12,9 @@ namespace Cw3.Controllers
     public class StudentsController : ControllerBase
     {
         [HttpGet]
-        public string GetStudents()
+        public string GetStudents(string orderBy)
         {
-            return "Jan, Anna, Krzysztof";
+            return $"Kowalski, Malewski, Andrzejewski sortowanie={orderBy}";
         }
 
         [HttpGet("{id}")]
